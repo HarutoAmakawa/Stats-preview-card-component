@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Lexend+Deca&display=swap");
+
+:root {
+  --main-background: hsl(233, 47%, 7%);
+  --card-background: hsl(244, 38%, 16%);
+  --accent: hsl(277, 64%, 61%);
+  --accent-alt: hsl(277, 50%, 50%);
+  --main-heading-and-stats: hsl(0, 0%, 100%);
+  --main-paragraph: hsla(0, 0%, 100%, 0.75);
+  --stat-headings: hsla(0, 0%, 100%, 0.6);
+  --font-heading: "Inter", sans-serif;
+  --font-paragraph-and-stats: "Lexend Deca", sans-serif;
+}
+
+body {
+  background-color: var(--main-background);
+  font: 62.5%;
+  width: 375px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5em auto;
+  width: 90%;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--card-background);
+  flex-direction: column;
+  border-radius: 1em;
+  box-shadow: 0 1px 0.5em var(--card-background);
+}
+
+img {
+  width: 100%;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+}
+
+h1,
+h2,
+p,
+.stat {
+  padding: 0 1.2em;
+  margin-top: 2em;
+  text-align: center;
+}
+
+h1,
+h2 {
+  color: var(--main-heading-and-stats);
+  font-family: var(--font-heading);
+}
+
+.container span {
+  color: var(--accent);
+}
+
+p,
+.stat {
+  color: var(--main-paragraph);
+  font-family: var(--font-paragraph-and-stats);
+  font-size: 1.2em;
+}
+h2,
+p,
+.stat {
+  margin: 0;
+  line-height: 1.5em;
+}
+
+h2 {
+  margin-top: 1em;
+}
+
+.stat {
+  text-transform: uppercase;
+}
+
+.bottom {
+  margin-bottom: 1em;
+}
+
+.attribution {
+  font-size: 1.2em;
+  text-align: center;
+  font-family: var(--font-paragraph-and-stats);
+  color: var(--main-heading-and-stats);
+  margin-top: -3em;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: var(--main-paragraph);
+}
+
+.attribution a:hover {
+  color: var(--main-heading-and-stats);
+}
+
+.attribution a:active {
+  color: blue;
+}
+
+@media screen and (min-width: 376px) {
+  body {
+    width: 100%;
+  }
+
+  .card {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  img {
+    order: 2;
+    border-radius: 0 1em 1em 0;
+  }
+}
