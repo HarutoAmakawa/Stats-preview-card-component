@@ -111,14 +111,51 @@ h2 {
   body {
     width: 100%;
   }
-
   .card {
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+  }
+  .box {
+    width: 80%;
+    padding: 3em;
+    margin: 3em;
+    position: relative;
+  }
+
+  h1,
+  h2,
+  p,
+  .stat {
+    text-align: left;
+    padding: 0;
+  }
+  .stat1 {
+    position: absolute;
+    top: 18em;
+  }
+  .stat2 {
+    position: absolute;
+    top: 18em;
+    left: 13em;
+  }
+  .stat3 {
+    position: absolute;
+    top: 18em;
+    left: 23em;
+  }
+  .stat1,
+  .stat2,
+  .stat3 {
+    margin-top: 2em;
   }
   img {
     order: 2;
     border-radius: 0 1em 1em 0;
   }
+}
+
+.attribution {
+  font-size: 1.8em;
+  margin: auto;
 }
