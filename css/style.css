@@ -109,7 +109,7 @@ p,
   color: red;
 }
 
-/* for mobile and tablets*/
+/*  mobile and tablets*/
 @media screen and (max-width: 768px) {
   .container {
     display: flex;
