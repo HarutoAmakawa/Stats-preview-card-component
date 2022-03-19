@@ -81,11 +81,10 @@ p,
 }
 
 .image {
+  background-blend-mode: multiply;
   background-image: url(/images/image-header-desktop.jpg);
   width: 50%;
   background-color: var(--accent-alt);
-  background-blend-mode: multiply;
-  background-repeat: no-repeat;
   border-radius: 0 1rem 1rem 0;
   background-size: cover;
 }
