@@ -9,7 +9,6 @@
   --font-weight-big: 700;
   --font-body: "Inter", sans-serif;
   --font-status: "Lexend Deca", sans-serif;
-  --accent-alt: rgba(170, 92, 219, 0.9);
 }
 
 html {
@@ -84,7 +83,7 @@ p,
   background-blend-mode: multiply;
   background-image: url(/images/image-header-desktop.jpg);
   width: 50%;
-  background-color: var(--accent-alt);
+  background-color: var(--accent);
   border-radius: 0 1rem 1rem 0;
   background-size: cover;
 }
